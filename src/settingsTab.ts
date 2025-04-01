@@ -25,21 +25,21 @@ export const DEFAULT_SETTINGS: ColorBorderSettings = {
             value: "Inbox",
             type: RuleType.Folder,
             color: "#ffb300",
-			width: "2"
+			width: "5"
         },
         {
             id: "frontmatter-public-499749",
             value: "category: public",
             type: RuleType.Frontmatter,
             color: "#499749",
-			width: "2"
+			width: "5"
         },
         {
             id: "frontmatter-private-c44545",
             value: "category: private",
             type: RuleType.Frontmatter,
             color: "#c44545",
-			width: "2"
+			width: "5"
         }
     ],
 };
@@ -81,7 +81,7 @@ export class SettingsTab extends PluginSettingTab {
                     value: '',
                     type: RuleType.Folder,
                     color: '#000000',
-					width: '2',
+					width: '5',
                 };
                 this.plugin.settings.colorRules.push(newRule);
                 this.addRuleSetting(rulesContainer, newRule);
